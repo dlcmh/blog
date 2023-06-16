@@ -4,6 +4,10 @@
     <%= form.text_field :commenter %><br>
   </div>
   <div>
+    <%= form.label :status %><br>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %><br>
+  </div>
+  <div>
     <%= form.label :body %><br>
     <%= form.text_area :body %><br>
   </div>
